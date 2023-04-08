@@ -8,7 +8,7 @@ There are two parts to a circle-jump, the **ground** part and the **air** part. 
 
 There are two differences between being on the ground and being in the air.
 
-The first difference is simple: the ground acceleration is much greater than the air acceleration. The acceleration is defined as $a=AsT$, where $T$ is the **frame-time**, $s$ is the **speed limit** ($\mathbf{g\textunderscore speed}$) and $A$ is some constant depending on where the player is (ground/air/water etc.). In Strafing Theory we learnt that for air acceleration, $A=1$. However here we are dealing with **ground acceleration**, so we have $A=10$ for VQ3 and $A=15$ for CPM.
+The first difference is simple: the ground acceleration is much greater than the air acceleration. The acceleration is defined as $a=AsT$, where $T$ is the **frame-time**, $s$ is the **speed limit** ($\mathrm{g\textunderscore speed}$) and $A$ is some constant depending on where the player is (ground/air/water etc.). In Strafing Theory we learnt that for air acceleration, $A=1$. However here we are dealing with **ground acceleration**, so we have $A=10$ for VQ3 and $A=15$ for CPM.
 
 The second difference is the friction, and it is this friction that causes the **maximum attainable ground speed to be limited**, so it's important that we understand how it works.
 
@@ -48,7 +48,7 @@ $$
 
 ![optimal angle delta](/assets/circle-jump-theory/math-deltaopt.png).
 
-What this means is that you begin stationary and start by accelerating in a straight line, in the same direction as your velocity. This is because it is the quickest way to accelerate up to the speed limit enforced by $\mathbf{g\textunderscore speed}$. Only once the speed limit starts to affect your attempt to accelerate further do you need to apply accelerations at angles to your velocity, and hence begin to turn.
+What this means is that you begin stationary and start by accelerating in a straight line, in the same direction as your velocity. This is because it is the quickest way to accelerate up to the speed limit enforced by $\mathrm{g\textunderscore speed}$. Only once the speed limit starts to affect your attempt to accelerate further do you need to apply accelerations at angles to your velocity, and hence begin to turn.
 
 Once the need to turn becomes necessary, applying an optimal angle gives a maximum resultant speed of
 
