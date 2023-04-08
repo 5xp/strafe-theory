@@ -17,10 +17,10 @@ In the Q3 engine, friction is implemented by decreasing the velocity every frame
 Since the friction is dependent on the player's speed, it would normally take a long time for the friction to bring the player to a complete stop when no acceleration is being applied (low speed -> low friction -> low deceleration). To combat this, the friction has a lower limit. When the player's speed is below $100$ ups, the applied friction is the same as it is at $100$ ups.
 
 $$
-v_\text{friction} = \begin{cases}
+\LARGE{v_\text{friction} = \begin{cases}
   v(1-cT)\text{, } &\ v \geq d \\
   v-cdT\text{, } &\ v < d
-\end{cases}
+\end{cases}}
 $$
 
 <!-- ![friction definition](/assets/circle-jump-theory/math-frictiondef.png) -->
@@ -40,10 +40,10 @@ and by remembering that $a$ is now the **ground** acceleration.
 In Strafing Theory I stated that the optimal acceleration angle, delta $\delta$, is the 'smallest angle at which we receive the full acceleration'. This statement holds, but we have to be careful when applying to small velocities. When our speed is below ($s-a$), the optimal angle is always $0\degree$ (acceleration in the same direction as the velocity). Above ($s-a$), the optimal angle delta is given by the same expression from Strafing Theory (after the replacement above has been made),
 
 $$
-\delta_\text{opt} = \begin{cases}
+\LARGE{\delta_\text{opt} = \begin{cases}
   0\text{, } &\ v <\dfrac{s-a}{1-cT} \\
   \arccos\left(\dfrac{s-a}{v\left(1-cT\right)}\right)\text{, } &\ v \geq \dfrac{s-a}{1-cT}
-\end{cases}
+\end{cases}}
 $$
 
 ![optimal angle delta](/assets/circle-jump-theory/math-deltaopt.png).
