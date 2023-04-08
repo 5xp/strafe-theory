@@ -66,7 +66,7 @@ As described above, the condition for acceleration to be allowed is
 
 ![Acceleration condition](/assets/strafing-theory/math-condition.jpg).
 
-Note that when ![v cos delta](/assets/strafing-theory/math-vcos.jpg) is negative, this means you are applying an acceleration in a direction at more than 90º to the velocity, which means you are effectively opposing your current velocity, a braking effect[\*](#asterisk).
+Note that when ![v cos delta](/assets/strafing-theory/math-vcos.jpg) is negative, this means you are applying an acceleration in a direction at more than 90º to the velocity, which means you are effectively opposing your current velocity, a braking effect[\*](#note).
 
 The size of the acceleration applied, _a_, is a constant, independent of the angle at which it is applied (in the allowed region). This is defined by the engine in the same way that jump velocity and friction (etc.) are defined. However there is one special case which is an exception to this rule. If your ![v cos delta](/assets/strafing-theory/math-vcos.jpg) is less than 320 but still very close to 320, applying the usual constant acceleration for a single frame would be enough to take you over 320ups in that direction. This is something the engine checks for, and if the situation exists, the applied acceleration will be only enough to take you up to the 320ups limit (so it would be ![320-vcostheta](/assets/strafing-theory/math-exception.jpg)), and not beyond. However, the range of angle delta at which this situation exists is very small.
 
