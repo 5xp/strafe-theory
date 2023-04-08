@@ -105,7 +105,7 @@ The results of these calculations are here for the mathematically-gifted; howeve
 $$
 r = \begin{cases}
   \sqrt{v^2 + a^2 + 2va\cos\delta}\text{, } &\ v\cos\delta \leq s-a \\
-  \sqrt{v^2\sin^2\delta+s^2}\text{, } &\ s-a \le v\cos\delta \le s \\
+  \sqrt{v^2\sin^2\delta+s^2}\text{, } &\ s-a < v\cos\delta < s \\
   v\text{, } &\ v\cos\delta \geq s
 \end{cases}
 $$
