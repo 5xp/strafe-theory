@@ -2,7 +2,7 @@
 
 This article will attempt to explain why certain angles have to be used when strafe-jumping, and why strafe-jumping is necessary in the first place. It is aimed at those who already have a practical knowledge of strafe-jumping, and wish to know more about what is really going on. Although this article is based on Quake 3, the theory may be applied to many games, especially those based on Quake engines.
 
-If you enjoyed this article, you may be interested in its sequel, [Circle-Jump Theory](/originals/circle-jumping-theory-original.md).
+If you enjoyed this article, you may be interested in its sequel, [Circle-Jump Theory](/originals/circle-jump-theory-original.md).
 
 Firstly, you should know that there is one important difference between standing on a surface and being airborne, that is a surface has friction. Therefore if you are in contact with a surface and you stop providing movement (i.e. release all keys) then the frictional force will decelerate your movement to zero. In the air there is no friction, and so as long as you are not in contact with another object, when you release all keys your speed will remain constant.
 
