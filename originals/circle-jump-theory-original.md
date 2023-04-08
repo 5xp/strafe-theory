@@ -24,7 +24,7 @@ So apart from these two differences, the mechanics of moving on the ground is ex
 
 ![replacement](/assets/circle-jump-theory/math-replacement.png),
 
-and by remembering that a is now the **ground** acceleration.
+and by remembering that _a_ is now the **ground** acceleration.
 
 ![angle delta](/assets/circle-jump-theory/delta.png)
 
