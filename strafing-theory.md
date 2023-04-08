@@ -82,13 +82,13 @@ The acceleration causes a change in the total velocity, which is made up of a **
 
 The way to achieve this maximum increase in speed is by applying the acceleration so its direction is as close to that of the velocity as possible, i.e. so the angle delta is as small as possible. This will mean that more of the acceleration goes into increasing our speed, and less goes into affecting the direction. The limiting condition gives a minimum angle delta of
 
-$$\delta_{min}=\arccos\left(\frac{320}{v}\right)$$
+$$\delta_\text{min}=\arccos\left(\frac{320}{v}\right)$$
 
 <!-- ![Minimum angle delta](assets/strafing-theory/math-deltamin.jpg). -->
 
 However in order to gain the full acceleration, $a$, we need the angle to be a bit larger, so we avoid the special case mentioned above. Therefore the optimal angle is the smallest angle at which we receive the full acceleration, $a$, which is given by
 
-$$\delta_{opt}=\arccos\left(\frac{320-a}{v}\right)$$
+$$\delta_\text{opt}=\arccos\left(\frac{320-a}{v}\right)$$
 
 <!-- ![Optimal angle delta](assets/strafing-theory/math-deltaopt.jpg). -->
 
@@ -176,7 +176,7 @@ Therefore we can take this change in direction into account, and specify the str
 
 First let's define angle alpha, $\alpha$, as the angle between the direction of overall motion and the optimal acceleration direction, at an air-change.
 
-$$\alpha=\frac{\varphi}{2}+\delta_{opt}$$
+$$\alpha=\frac{\varphi}{2}+\delta_\text{opt}$$
 
 <!-- ![alpha](assets/strafing-theory/math-alpha.jpg) -->
 
@@ -216,7 +216,7 @@ In short, the strafing angle for single-beat (epsilon) begins at about $22 \degr
 
 There is a small angle by which angle delta can exceed $90 \degree$ and still result in a speed increase. The maximum angle delta is given by
 
-$$\delta_{max}=\arccos\left(\frac{-a}{2v}\right)$$
+$$\delta_\text{max}=\arccos\left(\frac{-a}{2v}\right)$$
 
 <!-- ![maximum delta](assets/strafing-theory/math-deltamax.jpg). -->
 
