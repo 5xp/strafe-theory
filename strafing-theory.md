@@ -58,7 +58,7 @@ Let's call this angle between our velocity and acceleration angle **delta**, $\d
 
 The component of the velocity in the direction of the acceleration is given by
 
-$$\underline{\mathbf{v}} \cdot \underline{\mathbf{\hat{a}}} = v \cos \delta$$
+$$\LARGE{\LARGE{\underline{\mathbf{v}} \cdot \underline{\mathbf{\hat{a}}} = v \cos \delta}}$$
 
 <!-- ![Velocity component](assets/strafing-theory/math-dotproduct.jpg). -->
 
@@ -66,7 +66,7 @@ This can be thought of as the projection of the velocity onto the direction of $
 
 As described above, the condition for acceleration to be allowed is
 
-$$v \cos \delta < 320$$
+$$\LARGE{v \cos \delta < 320}$$
 
 <!-- ![Acceleration condition](assets/strafing-theory/math-condition.jpg). -->
 
@@ -82,13 +82,13 @@ The acceleration causes a change in the total velocity, which is made up of a **
 
 The way to achieve this maximum increase in speed is by applying the acceleration so its direction is as close to that of the velocity as possible, i.e. so the angle delta is as small as possible. This will mean that more of the acceleration goes into increasing our speed, and less goes into affecting the direction. The limiting condition gives a minimum angle delta of
 
-$$\delta_\text{min}=\arccos\left(\frac{320}{v}\right)$$
+$$\LARGE{\delta_\text{min}=\arccos\left(\frac{320}{v}\right)}$$
 
 <!-- ![Minimum angle delta](assets/strafing-theory/math-deltamin.jpg). -->
 
 However in order to gain the full acceleration, $a$, we need the angle to be a bit larger, so we avoid the special case mentioned above. Therefore the optimal angle is the smallest angle at which we receive the full acceleration, $a$, which is given by
 
-$$\delta_\text{opt}=\arccos\left(\frac{320-a}{v}\right)$$
+$$\LARGE{\delta_\text{opt}=\arccos\left(\frac{320-a}{v}\right)}$$
 
 <!-- ![Optimal angle delta](assets/strafing-theory/math-deltaopt.jpg). -->
 
@@ -102,19 +102,18 @@ This acceleration, $\underline{\mathbf{a}}$, causes the current velocity, $\unde
 
 The results of these calculations are here for the mathematically-gifted; however it's not necessary to understand the following. From now on I shall use the parameter $s$ to refer to the value of g_speed. First let's look at the resultant speed after one frame. Note that there are three regions where acceleration is applied differently and hence the resultant speed is given by the following piecewise function.
 
-$$
-r = \begin{cases}
+$$\LARGE{r = \begin{cases}
   \sqrt{v^2 + a^2 + 2va\cos\delta}\text{, } &\ v\cos\delta \leq s-a \\
   \sqrt{v^2\sin^2\delta+s^2}\text{, } &\ s-a < v\cos\delta < s \\
   v\text{, } &\ v\cos\delta \geq s
-\end{cases}
+\end{cases}}
 $$
 
 <!-- ![Resultant velocity](assets/strafing-theory/math-resultant.jpg) -->
 
 The acceleration per frame, $a$, is defined (for air) by the engine as
 
-$$a=sT$$
+$$\LARGE{a=sT}$$
 
 <!-- ![a=sT](assets/strafing-theory/math-accel.jpg), -->
 
@@ -132,7 +131,7 @@ This makes it highly important to ensure that any applied angle delta is not too
 
 If we apply an optimal angle delta, we get a resultant velocity of
 
-$r=\sqrt{v^2-a^2+2as}$
+$$\LARGE{r=\sqrt{v^2-a^2+2as}}$$
 
 <!-- ![optimal resultant velocity](assets/strafing-theory/math-resultantopt.jpg), -->
 
@@ -144,7 +143,7 @@ This graph illustrates how you cannot increase your speed as much at high veloci
 
 Now we shall look at the change in direction. Let angle phi-one, $\phi_1$, be the change in direction due to one frame of acceleration, at our optimal delta angle.
 
-$$\varphi_1=\arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)$$
+$$\LARGE{\varphi_1=\arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)}$$
 
 <!-- ![phi-one](assets/strafing-theory/math-phi1.jpg) -->
 
@@ -160,7 +159,7 @@ If we analyse the change in direction per frame, we see that not only is it smal
 
 We can use this to gain an expression for the change in direction between air-changes.
 
-$$\varphi \approx N \langle \varphi_1 \rangle$$
+$$\LARGE{\varphi \approx N \langle \varphi_1 \rangle}$$
 
 <!-- ![phi](assets/strafing-theory/math-phia.jpg)   -->
 
@@ -168,7 +167,7 @@ Phi is the change in direction between air-changes. N is the number of frames be
 
 <!-- Phi is the change in direction between air-changes. N is the number of frames between air-changes. ![phi-one average](assets/strafing-theory/math-phi1avg.jpg) is the average change in direction per frame. \[Using standard gravity (800) and 125fps, there are about 88 air-frames between bunny-hops.\] -->
 
-$$\varphi \approx N\arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)$$
+$$\LARGE{\varphi \approx N\arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)}$$
 
 <!-- ![phi](assets/strafing-theory/math-phib.jpg) -->
 
@@ -176,7 +175,7 @@ Therefore we can take this change in direction into account, and specify the str
 
 First let's define angle alpha, $\alpha$, as the angle between the direction of overall motion and the optimal acceleration direction, at an air-change.
 
-$$\alpha=\frac{\varphi}{2}+\delta_\text{opt}$$
+$$\LARGE{\alpha=\frac{\varphi}{2}+\delta_\text{opt}}$$
 
 <!-- ![alpha](assets/strafing-theory/math-alpha.jpg) -->
 
@@ -188,7 +187,7 @@ The first strafing angle I shall call angle **epsilon**, $\varepsilon$. This is 
 
 Angle epsilon is thus,
 
-$$\varepsilon = \alpha - 45\degree$$
+$$\LARGE{\varepsilon = \alpha - 45\degree}$$
 
 <!-- ![epsilon](assets/strafing-theory/math-epsilon.jpg). -->
 
@@ -202,7 +201,7 @@ The other strafing angle I shall call angle **kappa**, $\kappa$. This is the ang
 
 Angle kappa is thus,
 
-$$\kappa = 90 \degree - \alpha$$
+$$\LARGE{\kappa = 90 \degree - \alpha}$$
 
 <!-- ![kappa](assets/strafing-theory/math-kappa.jpg) -->
 
@@ -216,7 +215,7 @@ In short, the strafing angle for single-beat (epsilon) begins at about $22 \degr
 
 There is a small angle by which angle delta can exceed $90 \degree$ and still result in a speed increase. The maximum angle delta is given by
 
-$$\delta_\text{max}=\arccos\left(\frac{-a}{2v}\right)$$
+$$\LARGE{\delta_\text{max}=\arccos\left(\frac{-a}{2v}\right)}$$
 
 <!-- ![maximum delta](assets/strafing-theory/math-deltamax.jpg). -->
 

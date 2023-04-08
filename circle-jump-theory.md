@@ -29,7 +29,7 @@ Here, $d$ is the **$100$ ups limit**, and $c$ is the **friction factor**, which 
 
 So apart from these two differences, the mechanics of moving on the ground is exactly the same as in the air. Therefore we can use many of the results from Strafing Theory and apply them to this problem by making the following replacement
 
-$$v \mapsto v_{\text{friction}}$$
+$$\LARGE{v \mapsto v_{\text{friction}}}$$
 
 <!-- ![replacement](/assets/circle-jump-theory/math-replacement.png), -->
 
@@ -52,13 +52,14 @@ What this means is that you begin stationary and start by accelerating in a stra
 
 Once the need to turn becomes necessary, applying an optimal angle gives a maximum resultant speed of
 
-$$r = \sqrt{v^2(1-cT)^2-a^2+2as}$$
+$$\LARGE{r = \sqrt{v^2(1-cT)^2-a^2+2as}}$$
 
 <!-- ![max resultant speed](/assets/circle-jump-theory/math-resultantopt.png), -->
 
 and from this, it's easy to find the expression for the **maximum ground speed**,
 
-$$v_{\text{max}}=s\sqrt{\frac{A\left(2-AT\right)}{c\left(2-cT\right)}}$$
+$$\LARGE{v_{\text{max}}=s\sqrt{\frac{A\left(2-AT\right)}{c\left(2-cT\right)}}}$$
+
 <!-- ![max speed](/assets/circle-jump-theory/math-vmax.png), -->
 
 which gives us values of **$410$ ups for VQ3** and **$497$ ups for CPM**, at $125$ fps. Note that if there was no friction ($c=0$), there would in principle be no limit on the maximum speed. This would be an example of being on an **ice brush**, or indeed in the air. However there are inevitably other aspects of the engine that put limits on very high speeds.
@@ -71,7 +72,7 @@ You can see that this effect is only really noticeable at very low framerates. T
 
 As the framerate increases, the value of $v_{\text{max}}$ tends to
 
-$$v_{\text{max}} \longrightarrow s\sqrt{\frac{A}{c}}$$
+$$\LARGE{v_{\text{max}} \longrightarrow s\sqrt{\frac{A}{c}}}$$
 
 <!-- ![vmax=s*sqrt(A/c)](/assets/circle-jump-theory/math-vmaxinf.png). -->
 
@@ -79,7 +80,7 @@ This result is useful, for example if a developer wanted to increase ground fric
 
 So now we know about the maximum ground speed, let's look at how to achieve it. When the optimal angle delta is applied, the **change in direction per frame** of the velocity is given by
 
-$$\varphi_1=\arctan\left(\frac{a\sqrt{\left(1-cT\right)^{2}v^{2}-\left(s-a\right)^{2}}}{\left(1-cT\right)^{2}v^{2}+a\left(s-a\right)}\right)$$
+$$\LARGE{\varphi_1=\arctan\left(\frac{a\sqrt{\left(1-cT\right)^{2}v^{2}-\left(s-a\right)^{2}}}{\left(1-cT\right)^{2}v^{2}+a\left(s-a\right)}\right)}$$
 
 <!-- ![change in direction per frame](/assets/circle-jump-theory/math-gphione.png). -->
 
@@ -89,7 +90,7 @@ We can use this along with the other results above to graph the **rate at which 
 
 As the graph shows, the turning rate begins high but quickly reduces to a **minimum value** as the velocity tends to its maximum. The value of this minimum turning rate is given by
 
-$$\omega_{\text{min}}=\frac{1}{T}\arctan\left(\frac{T\sqrt{c\left(2-cT\right)\left[A\left(2-AT\right)-c\left(2-cT\right)\right]}}{\left(2-AT\right)-cT\left(2-cT\right)}\right)$$
+$$\LARGE{\omega_{\text{min}}=\frac{1}{T}\arctan\left(\frac{T\sqrt{c\left(2-cT\right)\left[A\left(2-AT\right)-c\left(2-cT\right)\right]}}{\left(2-AT\right)-cT\left(2-cT\right)}\right)}$$
 
 <!-- ![min turning rate](/assets/circle-jump-theory/math-omegamin.png), -->
 
@@ -103,7 +104,7 @@ Here the red line shows the initial straight-line acceleration, and the blue cur
 
 Armed with this information, we can calculate the radius of the circle in which we must move.
 
-$$R=\frac{v_\text{max}}{\omega_\text{min}}$$
+$$\LARGE{R=\frac{v_\text{max}}{\omega_\text{min}}}$$
 \[omega must be in **radians** for this one.\]
 
 <!-- ![R=vmax/omegamin](/assets/circle-jump-theory/math-radius.png) \[omega must be in **radians** for this one.\] -->
@@ -120,25 +121,25 @@ Using the results from Strafing Theory, a numerical analysis can determine the t
 
 We know from Strafing Theory that the when applying optimal air acceleration angles, the increase in speed per frame decreases as we speed up, therefore we experience the greatest increase in speed immediately after take-off. The change in direction per frame however has a peak in the middle of the air part. We can find when this peak occurs, and the value that it gives, by taking the expression for the change in direction per frame,
 
-$$\varphi_1 = \arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)$$
+$$\LARGE{\varphi_1 = \arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)}$$
 
 <!-- ![change in direction per frame](/assets/circle-jump-theory/math-phi1.png), -->
 
 and using calculus, which gives a peak change in direction of
 
-$$\varphi_{1\text{max}}=\arctan\left(\frac{AT}{2\sqrt{1-AT}}\right)$$
+$$\LARGE{\varphi_{1\text{max}}=\arctan\left(\frac{AT}{2\sqrt{1-AT}}\right)}$$
 
 <!-- ![peak change in direction per frame](/assets/circle-jump-theory/math-phi1max.png), -->
 
 occurring at
 
-$$v=s\sqrt{(2-AT)(1-AT)}$$
+$$\LARGE{v=s\sqrt{(2-AT)(1-AT)}}$$
 
 <!-- ![speed at phi1max](/assets/circle-jump-theory/math-vphi.png). -->
 
 So firstly we can use our initial increase in speed, from take-off, to produce an **upper bound** for the landing speed.
 
-$$v_\text{N}=v_0(1-N)+N\sqrt{v_0^2-a^2+2as}$$
+$$\LARGE{v_\text{N}=v_0(1-N)+N\sqrt{v_0^2-a^2+2as}}$$
 (where $v_0$ is the take-off speed)
 
 <!-- ![landing speed upper bound](/assets/circle-jump-theory/math-vub.png) (where $v_0$ is the take-off speed) -->
@@ -147,7 +148,7 @@ This gives values of **$585$ ups for VQ3** and **$641$ ups for CPM**.
 
 Similarly, we can use the peak change in direction per frame to produce an **upper bound** for the total change in direction caused by the air part of the circle-jump.
 
-$$\varphi=N\arctan\left(\frac{AT}{2\sqrt{1-AT}}\right)$$
+$$\LARGE{\varphi=N\arctan\left(\frac{AT}{2\sqrt{1-AT}}\right)}$$
 which gives $20$ degrees.
 
 <!-- ![total change in direction upper bound](/assets/circle-jump-theory/math-phiub.png), which gives $20$ degrees. -->
@@ -158,14 +159,14 @@ In order to travel the greatest distance in a chosen direction of overall motion
 
 By setting up the path in this way, we can determine values for the take-off and landing **view**\-angles. Let angle epsilon, $\varepsilon$, be the view-angle relative to the direction of overall motion. At **take-off** this view-angle is
 
-$$\varepsilon_0=45\degree-\arccos\left(\frac{s-a}{v_{0}}\right)+\frac{\varphi}{2}$$
+$$\LARGE{\varepsilon_0=45\degree-\arccos\left(\frac{s-a}{v_{0}}\right)+\frac{\varphi}{2}}$$
 which gives **$16\degree$ for VQ3** and **$5\degree$ for CPM**.
 
 <!-- ![epsilon 0](/assets/circle-jump-theory/math-epsilon0.png), which gives **$16\degree$ for VQ3** and **$5\degree$ for CPM**. -->
 
 On **landing** from the circle-jump, the view-angle is
 
-$$\varepsilon_\text{N}=45\degree-\arccos\left(\frac{s-a}{v_\text{N}}\right)-\frac{\varphi}{2}$$
+$$\LARGE{\varepsilon_\text{N}=45\degree-\arccos\left(\frac{s-a}{v_\text{N}}\right)-\frac{\varphi}{2}}$$
 which gives **$-22\degree$ for VQ3** and **$-25\degree$ for CPM**.
 
 <!-- ![epsilon N](/assets/circle-jump-theory/math-epsilonn.png), which gives **$-22\degree$ for VQ3** and **$-25\degree$ for CPM**. -->
@@ -174,7 +175,7 @@ The negative landing angle indicates that it is on the opposite side to the star
 
 From this, the distance travelled in the desired direction is approximately given by
 
-$$y_\text{N}=v_{0}\left(1-\frac{N}{2}\right)NT+\frac{N^{2}T}{2}\sqrt{v_{0}^{2}-a^{2}+2as}$$
+$$\LARGE{y_\text{N}=v_{0}\left(1-\frac{N}{2}\right)NT+\frac{N^{2}T}{2}\sqrt{v_{0}^{2}-a^{2}+2as}}$$
 
 <!-- ![distance](/assets/circle-jump-theory/math-distance.png), -->
 
