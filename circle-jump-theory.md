@@ -46,7 +46,7 @@ $$
 \end{cases}}
 $$
 
-![optimal angle delta](/assets/circle-jump-theory/math-deltaopt.png).
+<!-- ![optimal angle delta](/assets/circle-jump-theory/math-deltaopt.png). -->
 
 What this means is that you begin stationary and start by accelerating in a straight line, in the same direction as your velocity. This is because it is the quickest way to accelerate up to the speed limit enforced by $\mathrm{g\textunderscore speed}$. Only once the speed limit starts to affect your attempt to accelerate further do you need to apply accelerations at angles to your velocity, and hence begin to turn.
 
