@@ -8,7 +8,7 @@ There are two parts to a circle-jump, the **ground** part and the **air** part. 
 
 There are two differences between being on the ground and being in the air.
 
-The first difference is simple: the ground acceleration is much greater than the air acceleration. The acceleration is defined as ![a=AsT](/assets/circle-jump-theory/math-accel.png), where _T_ is the **frame-time**, _s_ is the **speed limit** (g*speed) and \_A* is some constant depending on where the player is (ground/air/water etc.). In Strafing Theory we learnt that for air acceleration, _A_\=1. However here we are dealing with **ground acceleration**, so we have _A_\=10 for VQ3 and _A_\=15 for CPM.
+The first difference is simple: the ground acceleration is much greater than the air acceleration. The acceleration is defined as ![a=AsT](/assets/circle-jump-theory/math-accel.png), where _T_ is the **frame-time**, _s_ is the **speed limit** (g_speed) and _A_ is some constant depending on where the player is (ground/air/water etc.). In Strafing Theory we learnt that for air acceleration, _A_\=1. However here we are dealing with **ground acceleration**, so we have _A_\=10 for VQ3 and _A_\=15 for CPM.
 
 The second difference is the friction, and it is this friction that causes the **maximum attainable ground speed to be limited**, so it's important that we understand how it works.
 
