@@ -1,3 +1,5 @@
+# "Strafing Theory" by injx
+
 This article will attempt to explain why certain angles have to be used when strafe-jumping, and why strafe-jumping is necessary in the first place. It is aimed at those who already have a practical knowledge of strafe-jumping, and wish to know more about what is really going on. Although this article is based on Quake 3, the theory may be applied to many games, especially those based on Quake engines.
 
 If you enjoyed this article, you may be interested in its sequel, [Circle-Jump Theory](circle-jumping-theory.md).
