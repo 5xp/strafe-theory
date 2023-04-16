@@ -100,7 +100,7 @@ Now that we know how acceleration is applied, we can look at the effect it has o
 
 This acceleration, $\underline{\mathbf{a}}$, causes the current velocity, $\underline{\mathbf{v}}$, to change and produces a resultant velocity, $\underline{\mathbf{r}}$. We can use basic trigonometry to calculate the size and change in direction of the resultant velocity. The change in direction also illustrates why strafe-jumping can cause the player to 'drift' to one side if the strafing is not consistent.
 
-The results of these calculations are here for the mathematically-gifted; however it's not necessary to understand the following. From now on I shall use the parameter $s$ to refer to the value of g_speed. First let's look at the resultant speed after one frame. Note that there are three regions where acceleration is applied differently and hence the resultant speed is given by the following piecewise function.
+The results of these calculations are here for the mathematically-gifted; however it's not necessary to understand the following. From now on I shall use the parameter $s$ to refer to the value of $\mathrm{g\textunderscore speed}$. First let's look at the resultant speed after one frame. Note that there are three regions where acceleration is applied differently and hence the resultant speed is given by the following piecewise function.
 
 $$\LARGE{r = \begin{cases}
   \sqrt{v^2 + a^2 + 2va\cos\delta}\text{, } &\ v\cos\delta \leq s-a \\
