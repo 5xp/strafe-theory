@@ -141,7 +141,7 @@ which we can use to graph the **maximum increase in speed per frame**:
 
 This graph illustrates how you cannot increase your speed as much at high velocites as you can at lower velocities.
 
-Now we shall look at the change in direction. Let angle phi-one, $\phi_1$, be the change in direction due to one frame of acceleration, at our optimal delta angle.
+Now we shall look at the change in direction. Let angle phi-one, $\varphi_1$, be the change in direction due to one frame of acceleration, at our optimal delta angle.
 
 $$\LARGE{\varphi_1=\arctan\left(\frac{a\sqrt{v^{2}-\left(s-a\right)^{2}}}{v^{2}+a\left(s-a\right)}\right)}$$
 
